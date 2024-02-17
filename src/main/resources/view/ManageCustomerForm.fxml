@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.CustomerManager.controller.ManageCustomerFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<AnchorPane fx:id="CustomerPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CustomerManager.controller.ManageCustomerFormController">
+   <children>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="43.0" layoutY="326.0" onAction="#btnClearOnAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #7f8c8d;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="140.0" layoutY="22.0" prefHeight="53.0" prefWidth="321.0" text="Customer Manage" textFill="#2c3e50">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="105.0" text=" Tel*" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="148.0" text=" Name*" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="191.0" text="Address*" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="234.0" text="Id*" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTel" layoutX="138.0" layoutY="108.0" onAction="#txtSearchOnAction" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="txtId" layoutX="139.0" layoutY="237.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="txtAddress" layoutX="139.0" layoutY="194.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="txtName" layoutX="139.0" layoutY="151.0" prefHeight="25.0" prefWidth="167.0" />
+      <ImageView fitHeight="287.0" fitWidth="269.0" layoutX="320.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/customer_Image-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="332.0" layoutY="326.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="235.0" layoutY="326.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="140.0" layoutY="326.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #2980b9;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="282.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-search-48.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
