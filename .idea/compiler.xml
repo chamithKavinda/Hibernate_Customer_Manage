@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hibernate_Crud_Manage" />
+        <module name="Hibernate_Customer_Manage" />
       </profile>
     </annotationProcessing>
   </component>
