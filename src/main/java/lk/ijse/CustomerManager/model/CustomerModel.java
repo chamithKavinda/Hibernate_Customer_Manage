@@ -16,7 +16,7 @@ public class CustomerModel {
         return true;
     }
 
-    public Customer searchCustomer(String customerTel) {
+    public Customer searchCustomer(int customerTel) {
         Session session = SessionFactoryConfig.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
         Customer customer = session.get(Customer.class, customerTel);
